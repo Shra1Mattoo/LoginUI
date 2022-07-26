@@ -34,13 +34,13 @@ const PhoneScreen = ({ navigation }) => {
                         <Image source={require('../assets/Images/SubtractImage/Subtract.jpg')} />
                     </View>
                     <View style={{ paddingHorizontal: widthPercentageToDP(5), paddingTop: heightPercentageToDP(0.5) }}>
-                        <Text style={{ fontSize: FONT_SIZE.ExtraLarge }}>
+                        <Text style={{ color: COLORS.Black, fontSize: FONT_SIZE.ExtraLarge }}>
                             Hello,
                         </Text>
-                        <Text style={{ fontSize: FONT_SIZE.ExtraLarge }}>
+                        <Text style={{ color: COLORS.Black, color: COLORS.Black, fontSize: FONT_SIZE.ExtraLarge }}>
                             What's your mobile
                         </Text>
-                        <Text style={{ fontSize: FONT_SIZE.ExtraLarge }}>
+                        <Text style={{ color: COLORS.Black, fontSize: FONT_SIZE.ExtraLarge }}>
                             number?
                         </Text>
                     </View>
@@ -48,6 +48,7 @@ const PhoneScreen = ({ navigation }) => {
                         <TextInput
                             keyboardType="number-pad"
                             style={{
+                                color: COLORS.Black,
                                 borderWidth: 1,
                                 fontSize: FONT_SIZE.ExtraMedium,
                                 borderRadius: 15,
@@ -69,7 +70,7 @@ const PhoneScreen = ({ navigation }) => {
                                     left: 5
                                 }}>
                                 <Text style={{
-                                    fontSize: FONT_SIZE.ExtraSmall,
+                                    color: COLORS.Black, fontSize: FONT_SIZE.ExtraSmall,
                                 }}>Setup a pin</Text>
                             </TouchableOpacity>
                         </View>

@@ -37,13 +37,13 @@ const OtpScreen = ({ navigation }) => {
                         <Image source={IMAGE_PATHS.UnionImage} />
                     </View>
                     <View style={{ paddingHorizontal: widthPercentageToDP(5), paddingTop: heightPercentageToDP(0.5) }}>
-                        <Text style={{ fontSize: FONT_SIZE.ExtraLarge }}>
+                        <Text style={{ color: COLORS.Black, fontSize: FONT_SIZE.ExtraLarge }}>
                             Enter the
                         </Text>
-                        <Text style={{ fontSize: FONT_SIZE.ExtraLarge }}>
+                        <Text style={{ color: COLORS.Black, fontSize: FONT_SIZE.ExtraLarge }}>
                             verfication code
                         </Text>
-                        <Text style={{ paddingVertical: heightPercentageToDP(1), color: COLORS.LightBlue, fontSize: FONT_SIZE.ExtraMedium }}>
+                        <Text style={{ color: COLORS.Black, paddingVertical: heightPercentageToDP(1), color: COLORS.LightBlue, fontSize: FONT_SIZE.ExtraMedium }}>
                             We've sent it to 7506027757
                         </Text>
                     </View>
@@ -70,7 +70,7 @@ const OtpScreen = ({ navigation }) => {
                                     left: 5
                                 }}>
                                 <Text style={{
-                                    fontSize: FONT_SIZE.ExtraSmall,
+                                    color: COLORS.Black, fontSize: FONT_SIZE.ExtraSmall,
                                 }}>Setup a pin</Text>
                             </TouchableOpacity>
                         </View>

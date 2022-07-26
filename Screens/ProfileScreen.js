@@ -49,12 +49,12 @@ const ProfileScreen = ({ navigation }) => {
                         <Image source={IMAGE_PATHS.SubtractImage} />
                     </View>
                     <View style={{ paddingHorizontal: widthPercentageToDP(5), paddingTop: heightPercentageToDP(1.5) }}>
-                        <Text style={{ fontWeight: '300', fontSize: FONT_SIZE.ExtraLarge }}>
+                        <Text style={{ color: COLORS.Black, fontWeight: '300', fontSize: FONT_SIZE.ExtraLarge }}>
                             My name is,
                         </Text>
 
-                        <TextInput placeholder="your full name." style={{ fontWeight: '300', width: widthPercentageToDP(49), paddingBottom: heightPercentageToDP(0), borderBottomColor: COLORS.Black, borderBottomWidth: 1, paddingVertical: heightPercentageToDP(1), fontSize: FONT_SIZE.ExtraLarge }}></TextInput>
-                        <Text style={{ fontWeight: '300', fontSize: FONT_SIZE.ExtraLarge, paddingTop: heightPercentageToDP(5) }}>
+                        <TextInput placeholderTextColor={COLORS.SoftGrey} placeholder="your full name." style={{ fontWeight: '300', width: widthPercentageToDP(49), paddingBottom: heightPercentageToDP(0), borderBottomColor: COLORS.Black, borderBottomWidth: 1, paddingVertical: heightPercentageToDP(1), fontSize: FONT_SIZE.ExtraLarge }}></TextInput>
+                        <Text style={{ color: COLORS.Black, fontWeight: '300', fontSize: FONT_SIZE.ExtraLarge, paddingTop: heightPercentageToDP(5) }}>
                             I currently live in
                         </Text>
                         <View style={{ flexDirection: 'row' }}>
@@ -84,15 +84,17 @@ const ProfileScreen = ({ navigation }) => {
                                 rowStyle={styles.dropdown1RowStyle}
                                 rowTextStyle={styles.dropdown1RowTxtStyle}
                             />
-                            <Text style={{ fontWeight: '300', paddingLeft: widthPercentageToDP(1), paddingTop: heightPercentageToDP(0.7), fontSize: FONT_SIZE.ExtraLarge }}>and</Text>
+                            <Text style={{ color: COLORS.Black, fontWeight: '300', paddingLeft: widthPercentageToDP(1), paddingTop: heightPercentageToDP(0.7), fontSize: FONT_SIZE.ExtraLarge }}>and</Text>
 
                             <SelectDropdown
                                 ref={citiesDropdownRef}
                                 data={cities}
+
                                 onSelect={(selectedItem, index) => {
                                     console.log(selectedItem, index);
                                 }}
                                 defaultButtonText={'city'}
+
 
                                 buttonTextAfterSelection={(selectedItem, index) => {
                                     return selectedItem.title;
@@ -121,7 +123,7 @@ const ProfileScreen = ({ navigation }) => {
                                     left: 5
                                 }}>
                                 <Text style={{
-                                    fontSize: FONT_SIZE.ExtraSmall,
+                                    color: COLORS.Black, fontSize: FONT_SIZE.ExtraSmall,
                                 }}>Setup a pin</Text>
                             </TouchableOpacity>
                         </View>
@@ -131,7 +133,7 @@ const ProfileScreen = ({ navigation }) => {
                     </View>
 
                     <View style={{ paddingHorizontal: widthPercentageToDP(5) }}>
-                        <TextInput keyboardType="numeric" placeholder="DDMMYYYY" style={{ fontWeight: '300', width: widthPercentageToDP(44), paddingBottom: heightPercentageToDP(0), borderBottomColor: COLORS.Black, borderBottomWidth: 1, paddingVertical: heightPercentageToDP(1), fontSize: FONT_SIZE.ExtraLarge }}></TextInput>
+                        <TextInput keyboardType="numeric" placeholder="DDMMYYYY" placeholderTextColor={COLORS.SoftGrey} style={{ color: COLORS.Black, fontWeight: '300', width: widthPercentageToDP(44), paddingBottom: heightPercentageToDP(0), borderBottomColor: COLORS.Black, borderBottomWidth: 1, paddingVertical: heightPercentageToDP(1), fontSize: FONT_SIZE.ExtraLarge }}></TextInput>
                     </View>
                     <Spacer space={2.5} />
 
@@ -141,7 +143,7 @@ const ProfileScreen = ({ navigation }) => {
                     </View>
                 </ScrollView>
             </SafeAreaView >
-        </ImageBackground>
+        </ImageBackground >
     )
 }
 const styles = StyleSheet.create({
